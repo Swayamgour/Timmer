@@ -12,9 +12,7 @@ export default function App() {
   useEffect(() => {
     timer = setInterval(() => {
       setSecond(second + 1);
-        if(stop){
-
-        }
+       
       if (second === 100) {
         setSec(sec + 1);
         setSecond(0);
@@ -31,7 +29,7 @@ export default function App() {
       }
     } , 10);
     return () => clearInterval(timer);
-  } ,[]);
+  } );
 
   const handelClick = () => {
     setHour(0);
